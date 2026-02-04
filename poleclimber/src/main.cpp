@@ -15,7 +15,9 @@ using namespace vex;
 competition Competition;
 
 // define your global instances of motors and other devices here
-
+vex::brain Brain;
+vex::motor motor = vex::motor(vex::PORT1, vex::gearSetting::ratio18_1, false);
+vex::pneumatics pneumatic = vex::pneumatics(Brain.ThreeWirePort.A);
 /*---------------------------------------------------------------------------*/
 /*                          Pre-Autonomous Functions                         */
 /*                                                                           */
