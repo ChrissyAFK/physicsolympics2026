@@ -18,7 +18,7 @@ vex::motor motor1 = vex::motor(vex::PORT9, vex::ratio6_1, false);
 vex::motor motor2 = vex::motor(vex::PORT10, vex::ratio6_1, false);
 vex::motor_group allMotors = vex::motor_group(motor1, motor2);
 vex::bumper buttonSense = bumper(Brain.ThreeWirePort.A);
-vex::limit Limit = limit(Brain.ThreeWirePort.lllB);
+vex::limit Limit = limit(Brain.ThreeWirePort.B);
 
 int speed = 30;
 
