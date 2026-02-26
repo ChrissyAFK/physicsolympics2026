@@ -27,12 +27,12 @@ void Pressed() {
   // Brain's screen.
   Brain.Screen.printAt( 10, 50, "pressed         " );
   motor1.setVelocity(-speed, rpm);
-  motor2.setVelocity(speed, rpm);
+  motor2.setVelocity(-speed * 0.5, rpm);
 }
 int main() {
-    Brain.Screen.printAt( 10, 50, "Hello V5" );
+    Brain.Screen.printAt( 10, 50, "Poleclimber Physics Olympics 2026" );
     motor1.setVelocity(speed, rpm);
-    motor2.setVelocity(-speed, rpm);
+    motor2.setVelocity(speed * 0.5, rpm);
     buttonSense.released(Pressed);
     Limit.released(Pressed);
     while(1) {
